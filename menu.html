@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Catering</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link rel="shortcut icon"
+        href="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/favicon-150x150.png?x86164"
+        type="image/x-icon">
+
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+    <style>
+        /* Cambiar color al pasar el ratón */
+        .navbar-nav .nav-link:hover {
+            color: #dc3545 !important;
+            /* Rojo (danger) */
+        }
+
+        /* Mantener color rojo en el enlace activo */
+        .navbar-nav .nav-link.active {
+            color: #dc3545 !important;
+            /* Rojo (danger) */
+        }
+
+        /* Cambiar color al pasar el ratón, solo en los enlaces de la navbar */
+        .navbar-nav .nav-link.hover-danger:hover {
+            color: #dc3545 !important;
+            /* Rojo (danger) */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light p-5 fixed-top">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="https://jupiterx.artbees.net/catering">
+                        <img src="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/logo.png?x86164"
+                            alt="Catering Logo" height="40">
+                    </a>
+
+                    <!-- Botón de navegación para dispositivos móviles -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-dark" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-dark hover-danger" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-dark hover-danger" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold text-dark hover-danger" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-dark hover-danger" href="galery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-dark hover-danger" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-danger btn-sm p-3">
+                            Login
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main style="margin-top: 130px;">
+        <div class="container-fluid my-5"
+            style="background-image: url('img/menu-banner.jpg'); background-size: cover; background-position: center; height: 450px; width: 100%; display: flex; justify-content: center; align-items: center;">
+            <h1 class="text-white fw-bold display-1">Special Menu</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-11"
+                    style="background-image: url('img/tomato3.png'); background-repeat: no-repeat; background-size: auto; background-position: right;">
+                    <h1 class="display-5 fw-bold text-left">You can Customize<br>
+                        Order from wide range of variety</h1>
+
+                    <!-- Navegación de pestañas -->
+                    <ul class="nav nav-tabs mt-4" id="menuTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="appetizers-tab" data-bs-toggle="tab"
+                                data-bs-target="#appetizers" type="button" role="tab" aria-controls="appetizers"
+                                aria-selected="true">Appetizers</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="main-courses-tab" data-bs-toggle="tab"
+                                data-bs-target="#main-courses" type="button" role="tab" aria-controls="main-courses"
+                                aria-selected="false">Main Courses</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="drinks-desserts-tab" data-bs-toggle="tab"
+                                data-bs-target="#drinks-desserts" type="button" role="tab"
+                                aria-controls="drinks-desserts" aria-selected="false">Drinks & Desserts</button>
+                        </li>
+                    </ul>
+
+                    <!-- Contenido de pestañas -->
+                    <div class="tab-content mt-3" id="menuTabsContent">
+                        <!-- Appetizers -->
+                        <div class="tab-pane fade show active" id="appetizers" role="tabpanel"
+                            aria-labelledby="appetizers-tab-link">
+                            <!-- Aquí va el contenido de la pestaña "Appetizers" -->
+                            <!-- Aquí va el contenido de la pestaña "Appetizers" -->
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Special Prawn Wonthon</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$6.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Fried Mashroom</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$5.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Crispy Chicken Momo</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$1.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Buffalo Ginger Wings</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$4.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Chicken Ball</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$4.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>French Fries</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$3.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Garlic Bread</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$2.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Nachos with Bolognese</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$5.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Sauce Beef Cheese</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$7.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Chicken Lollipop</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$3.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Main Courses -->
+                        <div class="tab-pane fade" id="main-courses" role="tabpanel" aria-labelledby="main-courses-tab">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Fried Mashroom</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$5.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Buffalo Ginger Wings</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$4.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Crispy Chicken Momo</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$1.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Special Prawn Wonthon</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$6.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Chicken Lollipop</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$3.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Garlic Bread</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$2.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Chicken Ball</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$4.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>French Fries</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$3.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Nachos with Bolognese</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$5.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Sauce Beef Cheese</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$7.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <!-- Drinks & Desserts -->
+                        <div class="tab-pane fade" id="drinks-desserts" role="tabpanel"
+                            aria-labelledby="drinks-desserts-tab">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Chicken Lollipop</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$3.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Crispy Chicken Momo</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$1.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Buffalo Ginger Wings</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$4.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Fried Mashroom</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$5.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Special Prawn Wonthon</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$6.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Sauce Beef Cheese</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$7.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>French Fries</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$3.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Garlic Bread</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$2.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Chicken Ball</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$4.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Nachos with Bolognese</strong>
+                                        <span style="margin-right: 300px;" class="fw-bold">
+                                            <h3>$5.50</h3>
+                                        </span>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <hr><br>
+
+        <div class="container p-5" style="background-color: rgb(223, 217, 217);">
+            <h1 class=" mt-5 p-5 fw-bold">Choose from Predifined Menu <br> or You can Customize</h1>
+        </div><br>
+        <div class="container-fluid" style="
+            background-image: url('img/Ensalada-de-arroz-integral-y-alino-de-cilantro-y-lima.jpg');
+            background-size: 33% 100%;
+            background-repeat: no-repeat;
+            background-position: left;">
+            <div class="container mt-5 border border-secondary p-5" style="background-color: rgba(238, 232, 232, 0.7);">
+                <div class="row g-5 justify-content-around">
+                    <!-- Card 1 -->
+                    <div class="col-6 col-md-2 text-center">
+                        <div class="title" style="min-height: 50px;">
+                            <h5 class="fw-bold p-3">Platter 01</h5>
+                        </div>
+                        <div class="image" style="min-height: 120px;">
+                            <img src="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/platter-04.png?x86164"
+                                alt="Beef Rib Steak" class="img-fluid" width="120" height="120">
+                        </div>
+                        <div class="description mt-3" style="min-height: 50px;">
+                            <p>Beef Rib Steak</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-6 col-md-2 text-center">
+                        <div class="title" style="min-height: 50px;">
+                            <h5 class="fw-bold p-3"></h5>
+                        </div>
+                        <div class="image" style="min-height: 120px;">
+                            <img src="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/platter-01.png?x86164"
+                                alt="Choco Momo" class="img-fluid" width="120" height="120">
+                        </div>
+                        <div class="description mt-4" style="min-height: 50px;">
+                            <p>Choco Momo</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-6 col-md-2 text-center">
+                        <div class="title" style="min-height: 50px;">
+                            <h5 class="fw-bold p-3"></h5>
+                        </div>
+                        <div class="image" style="min-height: 120px;">
+                            <img src="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/platter-02.png?x86164"
+                                alt="Egg Coconut" class="img-fluid" width="120" height="120">
+                        </div>
+                        <div class="description mt-4" style="min-height: 50px;">
+                            <p>Egg Coconut</p>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-6 col-md-2 text-center">
+                        <div class="title" style="min-height: 50px;">
+                            <h5 class="fw-bold p-3"></h5>
+                        </div>
+                        <div class="image" style="min-height: 120px;">
+                            <img src="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/platter-05.png?x86164"
+                                alt="Mix Fruit Dessert" class="img-fluid" width="120" height="120">
+                        </div>
+                        <div class="description mt-4" style="min-height: 50px;">
+                            <p>Mix Fruit Dessert</p>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col-6 col-md-2 text-center">
+                        <div class="title" style="min-height: 50px;">
+                            <h5 class="fw-bold p-3"></h5>
+                        </div>
+                        <div class="image" style="min-height: 120px;">
+                            <img src="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/platter-02.png?x86164"
+                                alt="Mutton Teriyaki" class="img-fluid" width="120" height="120">
+                        </div>
+                        <div class="description mt-4" style="min-height: 50px;">
+                            <p>Mutton Teriyaki</p>
+                        </div>
+                    </div>
+                </div><br>
+            </div>
+            <div class="container mt-5 border border-secondary p-5" style="background-color: rgba(238, 232, 232, 0.7);">
+                <div class="row g-5 justify-content-around">
+
+
+                    <!-- Card 3 -->
+                    <div class="col-6 col-md-2 text-center">
+                        <div class="title" style="min-height: 50px;">
+                            <h5 class="fw-bold p-3">Platter 02</h5>
+                        </div>
+                        <div class="image" style="min-height: 120px;">
+                            <img src="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/platter-02.png?x86164"
+                                alt="Egg Coconut" class="img-fluid" width="120" height="120">
+                        </div>
+                        <div class="description mt-4" style="min-height: 50px;">
+                            <p>Egg Coconut</p>
+                        </div>
+                    </div>
+                    <!-- Card 1 -->
+                    <div class="col-6 col-md-2 text-center">
+                        <div class="title" style="min-height: 50px;">
+                            <h5 class="fw-bold p-3"></h5>
+                        </div>
+                        <div class="image" style="min-height: 120px;">
+                            <img src="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/platter-04.png?x86164"
+                                alt="Beef Rib Steak" class="img-fluid" width="120" height="120">
+                        </div>
+                        <div class="description mt-3" style="min-height: 50px;">
+                            <p>Beef Rib Steak</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-6 col-md-2 text-center">
+                        <div class="title" style="min-height: 50px;">
+                            <h5 class="fw-bold p-3"></h5>
+                        </div>
+                        <div class="image" style="min-height: 120px;">
+                            <img src="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/platter-01.png?x86164"
+                                alt="Choco Momo" class="img-fluid" width="120" height="120">
+                        </div>
+                        <div class="description mt-4" style="min-height: 50px;">
+                            <p>Choco Momo</p>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-6 col-md-2 text-center">
+                        <div class="title" style="min-height: 50px;">
+                            <h5 class="fw-bold p-3"></h5>
+                        </div>
+                        <div class="image" style="min-height: 120px;">
+                            <img src="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/platter-05.png?x86164"
+                                alt="Mix Fruit Dessert" class="img-fluid" width="120" height="120">
+                        </div>
+                        <div class="description mt-4" style="min-height: 50px;">
+                            <p>Mix Fruit Dessert</p>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col-6 col-md-2 text-center">
+                        <div class="title" style="min-height: 50px;">
+                            <h5 class="fw-bold p-3"></h5>
+                        </div>
+                        <div class="image" style="min-height: 120px;">
+                            <img src="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/platter-02.png?x86164"
+                                alt="Mutton Teriyaki" class="img-fluid" width="120" height="120">
+                        </div>
+                        <div class="description mt-4" style="min-height: 50px;">
+                            <p>Mutton Teriyaki</p>
+                        </div>
+                    </div>
+                </div><br>
+            </div>
+            <div class="container mt-5 border border-secondary p-5" style="background-color: rgba(238, 232, 232, 0.7);">
+                <div class="row g-5 justify-content-around">
+
+
+                    <!-- Card 3 -->
+                    <div class="col-6 col-md-2 text-center">
+                        <div class="title" style="min-height: 50px;">
+                            <h5 class="fw-bold p-3">Platter 03</h5>
+                        </div>
+                        <div class="image" style="min-height: 120px;">
+                            <img src="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/platter-02.png?x86164"
+                                alt="Egg Coconut" class="img-fluid" width="120" height="120">
+                        </div>
+                        <div class="description mt-4" style="min-height: 50px;">
+                            <p>Egg Coconut</p>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-6 col-md-2 text-center">
+                        <div class="title" style="min-height: 50px;">
+                            <h5 class="fw-bold p-3"></h5>
+                        </div>
+                        <div class="image" style="min-height: 120px;">
+                            <img src="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/platter-05.png?x86164"
+                                alt="Mix Fruit Dessert" class="img-fluid" width="120" height="120">
+                        </div>
+                        <div class="description mt-4" style="min-height: 50px;">
+                            <p>Mix Fruit Dessert</p>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col-6 col-md-2 text-center">
+                        <div class="title" style="min-height: 50px;">
+                            <h5 class="fw-bold p-3"></h5>
+                        </div>
+                        <div class="image" style="min-height: 120px;">
+                            <img src="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/platter-02.png?x86164"
+                                alt="Mutton Teriyaki" class="img-fluid" width="120" height="120">
+                        </div>
+                        <div class="description mt-4" style="min-height: 50px;">
+                            <p>Mutton Teriyaki</p>
+                        </div>
+                    </div>
+                    <!-- Card 1 -->
+                    <div class="col-6 col-md-2 text-center">
+                        <div class="title" style="min-height: 50px;">
+                            <h5 class="fw-bold p-3"></h5>
+                        </div>
+                        <div class="image" style="min-height: 120px;">
+                            <img src="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/platter-04.png?x86164"
+                                alt="Beef Rib Steak" class="img-fluid" width="120" height="120">
+                        </div>
+                        <div class="description mt-3" style="min-height: 50px;">
+                            <p>Beef Rib Steak</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-6 col-md-2 text-center">
+                        <div class="title" style="min-height: 50px;">
+                            <h5 class="fw-bold p-3"></h5>
+                        </div>
+                        <div class="image" style="min-height: 120px;">
+                            <img src="https://devasw7xy5fu5.cloudfront.net/catering/wp-content/uploads/sites/262/2019/07/platter-01.png?x86164"
+                                alt="Choco Momo" class="img-fluid" width="120" height="120">
+                        </div>
+                        <div class="description mt-4" style="min-height: 50px;">
+                            <p>Choco Momo</p>
+                        </div>
+                    </div>
+                </div><br>
+            </div>
+        </div>
+
+        <section class="container position-relative py-5"
+            style="background-image: url(''); background-size: cover; background-position: center;">
+            <div class="row">
+                <!-- Columna 1: Sitemap -->
+                <div class="col-12 col-md-3 mb-4">
+                    <h5 class="fw-bold">Sitemap</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-decoration-none">About</a>
+                        </li>
+                        <li><a href="services.html" class="text-decoration-none">Services</a></li>
+                        <li><a href="menu.html" class="text-decoration-none">Menu</a></li>
+                        <li><a href="galery.html" class="text-decoration-none">Gallery</a></li>
+                        <li><a href="contact.html" class="text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 2: Specials -->
+                <div class="col-12 col-md-3 mb-4">
+                    <h5 class="fw-bold">Specials</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Special Chefs</a></li>
+                        <li><a href="#" class="text-decoration-none">Predefined Menu</a></li>
+                        <li><a href="#" class="text-decoration-none">What We Offer</a></li>
+                        <li><a href="#" class="text-decoration-none">Hire Us</a></li>
+                        <li><a href="#" class="text-decoration-none">What Our Clients Say</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Latest Recipes -->
+                <div class="col-12 col-md-3 mb-4">
+                    <h5 class="fw-bold">Latest Recipes</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Asian Grilled
+                                Salmon</a></li>
+                        <li><a href="#" class="text-decoration-none">Spicy Moroccan
+                                Wing</a></li>
+                        <li><a href="#" class="text-decoration-none">Chili Nachos</a>
+                        </li>
+                        <li><a href="#" class="text-decoration-none">Fried Pie</a></li>
+                        <li><a href="#" class="text-decoration-none">Caramel-Apple
+                                Cheesecake</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Newsletter -->
+                <div class="col-12 col-md-3 mb-4">
+                    <h5 class="fw-bold">Join our Newsletter</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <form action="#" method="post" class="mt-5">
+                        <div class="mb-3 input-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                            <button type="submit" class="btn"
+                                style="background-color: transparent; border: 1px solid red;">
+                                <i class="far fa-envelope" style="color: red;"></i>
+                            </button>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+</body><br>
+<hr><br>
+
+
+<footer>
+    <div class="container bg-secondary p-3">
+        ©2024 Produzido y creado por ANA AFONSO CATALAO
+    </div><br>
+</footer>
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+<!-- Incluye Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
